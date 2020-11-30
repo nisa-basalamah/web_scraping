@@ -109,7 +109,7 @@ df['IMDb Rating'] = df['IMDb Rating'].astype(float)
 top7 = df.drop('Genre', axis=1).drop_duplicates()[:7]
 
 top7_genre = df.set_index('Title')['Genre']
-top7_genre = top7_genre.loc[:'Wayne'].reset_index()
+top7_genre = top7_genre.loc[:'The Witcher'].reset_index()
 #end of data wranggling 
 
 @app.route("/")
